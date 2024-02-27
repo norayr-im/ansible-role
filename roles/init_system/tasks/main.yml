@@ -3,10 +3,8 @@
 - name: Update services
   apt:
     update_cache: true
-  when: ansible_distribution == "Ubuntu"
 
 - name: Install vim package
   apt:
     name: vim
     state: latest
-  when: ansible_distribution == "Ubuntu"
